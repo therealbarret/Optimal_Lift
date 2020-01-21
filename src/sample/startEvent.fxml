@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.6557788944723618" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BeginEvent">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Button fx:id="eventBeginning" layoutX="273.0" layoutY="154.0" mnemonicParsing="false" onAction="#begin" text="Begin" />
+                <Text layoutX="102.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight to lift:" />
+                <TextField fx:id="selectKG" layoutX="195.0" layoutY="109.0" onAction="#begin" prefHeight="27.0" prefWidth="59.0" text="weight" />
+                <Label fx:id="totalLift" layoutX="449.0" layoutY="114.0" text="total" />
+                <Text layoutX="321.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight to be lifted: ">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="enterName" layoutX="287.0" layoutY="24.0" onAction="#begin" prefHeight="27.0" prefWidth="146.0" text="Enter player name" />
+                <Text layoutX="195.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player name" />
+                <Label fx:id="stringName" layoutX="273.0" layoutY="75.0" text="Player">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Text layoutX="263.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="kg" />
+                <Text layoutX="487.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="kg" />
+                <Label fx:id="distribution" layoutX="208.0" layoutY="213.0" text="Weight Plates" />
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="133.0" prefWidth="598.0" SplitPane.resizableWithParent="false">
+            <children>
+                <Text layoutX="67.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bench" />
+                <Text layoutX="259.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DeadLift" />
+                <Text layoutX="483.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Squat" />
+                <Separator layoutX="189.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="200.0" />
+                <Separator layoutX="385.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="15.0" />
+                <TextField fx:id="attempt1" layoutX="3.0" layoutY="54.0" onAction="#begin" text="Successful or Not" />
+                <TextField fx:id="attempt2" layoutX="209.0" layoutY="54.0" onAction="#begin" text="Successful or Not" />
+                <TextField fx:id="attempt3" layoutX="417.0" layoutY="53.0" onAction="#begin" text="Successful or Not" />
+            </children></AnchorPane>
+    </items>
+</SplitPane>
+

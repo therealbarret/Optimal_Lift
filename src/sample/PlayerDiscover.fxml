@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="319.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="sendToAddForm" layoutX="316.0" layoutY="80.0" mnemonicParsing="false" onAction="#addPlayer" text="Add Player" />
+        <Button fx:id="sendToEditForm" layoutX="316.0" layoutY="141.0" mnemonicParsing="false" onAction="#editPlayer" text="Edit Player" />
+        <Button fx:id="sendToDeleteForm" layoutX="306.0" layoutY="199.0" mnemonicParsing="false" onAction="#deletePlayer" text="Delete Player " />
+        <Button fx:id="begin" layoutX="315.0" layoutY="258.0" mnemonicParsing="false" onAction="#showEvent" text="Start Event" />
+        <Text layoutX="161.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lifting Challenge " wrappingWidth="149.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="55.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select to add player to event " />
+        <Text layoutX="55.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select to edit weight of existing player " />
+        <Text layoutX="55.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select to delete a player from event" />
+        <Text layoutX="55.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select player first to begin an event" />
+    </children>
+</AnchorPane>
